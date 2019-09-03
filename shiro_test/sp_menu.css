@@ -1,0 +1,285 @@
+@charset"utf-8";
+
+
+body{
+    width:100%;
+}
+
+h1{
+    font-size:3rem;
+}
+
+footer{
+    clear: both;
+    padding:30px 0 5px 0;
+    text-align:center;
+}
+
+.menu li{
+    display:inline-block;
+    padding:48px 30px 0px 0px;
+}
+
+.menu li:hover{
+    opacity:0.7;
+}
+
+.container {
+width:100%;
+height:155px;
+box-sizing: border-box;
+z-index:1;
+position:fixed;
+background-color:#fff;
+}
+
+.h_right{
+    float:right;
+}
+
+.h_left{
+    float:left;
+}
+
+.h_left img{
+    width:44%;
+    margin:36px 0px 0 40px;
+    z-index:30;
+}
+
+.main{
+    clear:both;
+}
+
+ul.menu{
+    margin-right:10px;
+}
+
+.top img{
+    display:block;
+    margin:0 auto;
+    width:75%;
+}
+
+article{
+    width:75%;
+    margin:149px auto 20px auto;
+}
+
+.about_h{
+    height:37px;
+    margin-top:20px;
+    margin-bottom:120px;
+    
+}
+
+.about_p{
+    padding:0 15px;
+    margin-bottom:40px;
+}
+
+.about_h img{
+    display:block;
+    margin:0 auto;
+    width:24%;
+}
+
+.menu_ h1{
+    display:block;
+    padding:59px 0px 50px 70px;
+}
+
+.small{
+    padding-top:79px;
+    width:48px;
+}
+
+.menu_ {
+    width:100%;
+}
+
+.lunch_box{
+    width:100%;
+    padding-top:16px;
+    margin:0 auto;
+}
+
+.l_box{
+    width:100%;
+    box-sizing: border-box;
+    float:left;
+    margin:0 auto 53px auto;
+    display:block;
+}
+
+.l_box img{
+    width:100%;
+    border-radius:4rem;
+    padding-bottom:10px;
+}
+
+.l_box:hover{
+    opacity:0.6;
+}
+
+.clearfix:after{
+    content: ""; 
+    display: block; 
+    clear: both; 
+    visibility:hidden;
+}
+
+.l_box dl{
+    padding:0 0 20px 30px;
+    font-size:2rem;
+    text-align: center;
+}
+
+.main {
+    height: 100%;
+    min-height: 100vh;
+    padding: 0 28px;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav li {
+    color: #fff;
+    text-align: center;
+}
+
+#wrapper {
+    background-color:#eee;
+}
+
+/*スライダーCSS*/
+.slider{
+    margin: 154px auto 40px auto;
+    width: 100%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+
+ul.menu{
+    display:none;
+}
+.food_box,.drink,.dessert{
+    width:100%;
+}
+
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+    position: fixed; /*表示位置を固定*/
+    z-index: 2; /*重ね順を変更*/
+    top: 0; /*表示位置を指定*/
+    left: 0; /*表示位置を指定*/
+    background: #fff;/*背景を白にする*/
+    text-align: center; /*テキストを中央揃え*/
+    width: 100%; /*全幅表示*/
+    transform: translateY(-100%); /*ナビを上に隠す*/
+    transition: all 0.6s; /*アニメーションの時間を指定*/
+    opacity:0.75;
+}
+
+nav.NavMenu ul{
+    background: #fff; /*背景を白にする*/
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    opacity:1;
+}
+
+nav.NavMenu ul li{
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav.NavMenu ul li a img{
+    width:24%;
+}
+
+
+nav.NavMenu ul li:last-child{
+    padding-bottom: 3em;
+    border-bottom: none; /*最後のメニュー項目のみ下線を消す*/
+}
+
+nav.NavMenu ul li a{
+    display: block; /*クリックできる領域を広げる*/
+    color: #000;
+    padding: 3em 0;
+}
+
+nav.NavMenu ul li:first-child{
+    padding: 6em 0 1em 0;
+}
+
+/*トグルボタンが押されたときに付与するクラス*/
+nav.NavMenu.active{
+    transform: translateY(0%);
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 31px;
+    top: 42px;
+    width: 84px;
+    height: 84px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px #655C4D;
+    -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+    transition: .35s ease-in-out;			/*変化の速度を指定*/
+    left: 6px;
+}
+
+.Toggle span:nth-child(1) {
+    top: 18px;
+}
+
+.Toggle span:nth-child(2) {
+    top: 31px;
+}
+
+.Toggle span:nth-child(3) {
+    top: 45px;
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 921px) {
+    .main {
+        padding: 0 20px;
+    }
+}

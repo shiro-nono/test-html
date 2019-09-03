@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Cafe Calmet/Menu</title>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width:641px)" href="main.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width:641px)" href="access.css">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
+<link href="slick-theme.css" rel="stylesheet" type="text/css">
+<link href="slick.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+      <div class="h_left">
+          <a href="index.html"><img src="img/calmat_logo_b.png" alt="トップに飛ぶボタン"></a>
+      </div>
+      <div class="h_right">
+              <ul class="menu">
+                  <li>
+                      <a href="index.html"><img src="img/home.png" alt="ホーム"></a>
+                  </li>
+                  <li>
+                      <a href="about.html"><img src="img/about.png" alt="アバウト"></a>
+                  </li>
+                  <li>
+                      <a href="menu.html"><img src="img/menu.png" alt="メニュー"></a>
+                  </li>
+                  <li>
+                      <a href="access.html"><img src="img/access.png" alt="アクセス"></a>
+                  </li>
+              </ul>
+      </div>
+  </div>
+</header>
+    <nav class="NavMenu">
+        <ul>
+            <li>
+                <a href="index.html"><img src="img/home.png" alt="ホーム"></a>
+            </li>
+            <li>
+                <a href="about.html"><img src="img/about.png" alt="アバウト"></a>
+            </li>
+            <li>
+                <a href="menu.html"><img src="img/menu.png" alt="メニュー"></a>
+            </li>
+            <li>
+                <a href="access.html"><img src="img/access.png" alt="アクセス"></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ハンバーガーメニュー部分 --> 
+    <div class="Toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<div class="main">
+    <article>
+        <div class="about_h">
+            <img src="img/access.png" alt="アクセスのの文字画像">
+        </div>
+        <div class="map">
+            <div class="map_b">
+                <img src="img/map.png" alt="マップ画像背景">
+            </div>
+            
+            <div class="hato">
+                <a href="#"><img src="img/hato.gif" alt="お店の場所"></a>
+            </div>
+            
+        </div>
+        <div class="map_g">
+            <a href="#">
+            <img src="img/map_go.png" alt="googlemapを開く"></a>
+        </div>
+        
+        <div class="map_in">
+            <h1><img src="img/bell2.png" alt="タイトル画像横の花" class="small">Cafe calmet</h1>
+            <p>〒000-0000</p>
+            <p>住所</p>
+            <p>TEL 000-000-0000</p>
+            <p>OPEN: 10:00~19:00〈L.O〉18:30</p>
+            <p>日曜日・祝日 11:30~20:00〈L.O〉19:00</p>
+            <p>CLOSE: 水曜日</p>
+        </div>
+        <div class="sns_">
+           <a href="#" class="twitter">
+               <i class="fa fa-twitter-square fa-4x"></i>
+           </a>
+            <a href="#" class="instagram">
+               <i class="fa fa-instagram fa-4x"></i>
+           </a>
+        </div>
+    </article>
+</div>
+<footer>
+<p>copyright(c).All right reserved</p>
+</footer>
+    <script type="text/javascript">
+        $(function(){
+            $('.slider').slick({
+                autoplay:true,
+                autoplaySpeed:3100,
+                dots:true,
+                fade:true,
+                focusOnSelect:true,
+                speed:1500,
+            });
+        });
+    </script>
+    <!--トグルボタンが押されたときに、クラスを付与-->
+    <script type="text/javascript">
+        $(function(){
+            $('.Toggle').click(function() {
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('.NavMenu').addClass('active');
+                    //クラスを付与
+                } else {
+                    $('.NavMenu').removeClass('active');
+                    //クラスを外す
+                }
+            });
+        });
+    </script>
+</body>
+</html>

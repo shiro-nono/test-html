@@ -1,0 +1,134 @@
+@charset"utf-8";
+
+body{
+    background-color:#eee;
+}
+
+ul{
+    margin:0;
+}
+
+.top img,.today img{
+    width:100%;
+}
+
+.left{
+    float:left;
+    width:40%;
+}
+
+.right{
+    float:right;
+    width:60%;
+}
+
+.today a{
+    width:85%;
+    margin:183px auto 0 auto;
+}
+
+.content{
+    clear:both;
+}
+
+.main{
+    width:100%;
+}
+
+.menu_index li a:hover,.today a:hover{
+    opacity:0.7;
+}
+
+.menu_index{
+    padding:183px 0 0 118px;
+}
+
+.menu_index li{
+    padding-bottom:45px;
+}
+
+.menu_index img{
+    width:74px;
+}
+
+.f_wrapper {
+    width:80%;
+    margin:0 auto 0 auto;
+}
+
+footer p{
+    color:#645b4d;
+}
+
+.top {
+    position:relative;
+    top: 50%;
+}
+
+.top .b_img { z-index: 0; }
+
+.top .top_middle {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.top .top_middle img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+}
+
+/*
+.top{
+    position:relative;
+    background-image:url(img/haikei_.png);
+    -webkit-background-size:cover;
+    background-size:cover;
+    padding:192px 0;
+    height:0;
+    表示画像の高さ ÷ 表示画像の幅 × 100
+    padding-top:56.15%;
+}
+
+.top_middle {
+    width:100%;
+    max-width:150px;
+    margin:0 auto;
+    padding:50px 10px;
+}
+*/
+/*.top_middle{
+    position: absolute;
+    top:43%;
+    left:45%;
+    width:100%;
+}*/
+/*ここからレスポンシブ*/
+@media (max-width:954px){
+      
+    ul.menu {
+        display:none;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        width:100%;
+    }
+    .today a {
+        width: 85%;
+        margin: 31px auto 0 auto;
+    }
+    .top img{
+        margin-top:120px;
+    }
+    
+    .menu_index{
+        display:none;
+    }
+
+}

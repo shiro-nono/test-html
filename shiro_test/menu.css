@@ -1,0 +1,124 @@
+@charset"utf-8";
+
+.container {
+width:68%;
+height:84px;
+margin:0 auto;
+clear:both;
+}
+
+.h_left img{
+    width:30%;
+    margin-top:45px;
+}
+
+header{
+    padding-bottom:30px;
+}
+
+.about_h{
+    height:37px;
+    margin-bottom:45px;
+}
+
+h1{
+    display:block;
+    padding:16px 0px 32px 49px;
+}
+
+.small{
+    padding-top:4px;
+    width:38px;
+}
+
+.menu_ {
+    width:100%;
+}
+
+.lunch_box{
+    width:100%;
+    padding-top:16px;
+    margin:0 auto;
+}
+
+.l_box{
+    width:30%;
+    box-sizing: border-box;
+    float:left;
+    margin:1.66%;
+    display:block;
+}
+
+.l_box img{
+    width:100%;
+    border-radius:4rem;
+    padding-bottom:10px;
+}
+
+.l_box:hover{
+    opacity:0.6;
+}
+
+.clearfix:after{
+    content: ""; 
+    display: block; 
+    clear: both; 
+    visibility:hidden;
+}
+
+.l_box dl{
+    padding-bottom:30px;
+    margin:0;
+}
+.main {
+    height: 100%;
+}
+
+/*ここからスライダーCSS*/
+.slider{
+    margin: 20px auto 40px auto;
+    width: 67%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+
+.slider .slick-prev::before, .slider .slick-next::before{
+    color:#645b4d;
+}
+
+.l_box dt,.l_box dd{
+    color:#000;
+    text-align:center;
+}
+
+nav{
+    display: none;
+}
+
+@media screen and (max-width: 954px){
+    .slider {
+        margin-top:12px;
+    }
+    ul.menu{
+        display:none;
+    }
+    .h_left img{
+        margin-top:38px;
+        margin-left:0;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+    .l_box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 217px){
+    .h_left img{
+        margin-top:44px;
+    }
+}
